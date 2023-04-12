@@ -12,13 +12,13 @@
       .container {
         max-width: 1200px; /* Set a maximum width for the container */
         margin: 0 auto; /* Center the container horizontally */
-        padding: 20px; /* Add some padding to the container */
+        /* Add some padding to the container */
       }
       /* Styles for form */
       h1,
       h3 {
         font-weight: bold;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
       }
       form {
         margin: 10px auto;
@@ -114,11 +114,11 @@
       >
         <h1>Data Reconciliation</h1>
         <h5>Upload Purchase Register File</h5>
-        <input type="file" name="file1" lable="file1" /><br />
+        <input type="file" name="file1" lable="file1"  required/><br />
         <h5>Upload Government Portal File</h5>
-        <input type="file" name="file2" /><br />
+        <input type="file" name="file2" required/><br />
         <h5>Enter Output File Name:</h5>
-        <input type="text" name="output_file_name" />
+        <input type="text" name="output_file_name" required/>
         <p>file name with extension(e.g : abc.xlsx)</p>
         <input type="submit" value="Reconcile" />
       </form>

@@ -81,7 +81,9 @@ def reconcile_and_save(file_path_mml, file_path_gov, output_file_path):
     different_data_gov.to_excel(writer, sheet_name='GOVData(notFoundinMML)', index=False)
     writer.save()
 
+# if __name__ == '__main__':
+#     app.run(debug=True)
+
+
 if __name__ == '__main__':
-    app.run(debug=True)
-
-
+    app.run(debug=True, host='0.0.0.0')
