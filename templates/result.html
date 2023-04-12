@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reconciliation Results</title>
+    <!-- <title>Data Reconciliation</title> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+        .container {
+          max-width: 1200px; /* Set a maximum width for the container */
+          margin: 0 auto; /* Center the container horizontally */
+          padding: 20px; /* Add some padding to the container */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light" style="display: flex;">
+        <div class="container-fluid" style="display: flex;">
+          <a class="navbar-brand" href="#">
+            <img
+              src="{{ url_for('static', filename='logo.png') }}"
+              alt="Image"
+              width="40"
+              height="40"
+            />
+            <!-- logo.png" alt="" width="300" height="240" class="d-inline-block align-text-top"\> -->
+            <b style="font-size: 30px;"> menon and menon Ltd.</b>
+          </a>
+          <p style="font-size: 20px;"><b>2A/2B Reconciliation</b> </p>
+        </div>
+      </nav>
+      
+      <div class="container">
+        <center>
+        <h1>Reconciliation Results</h1>
+        <p>Click the link below to download the reconciled data file:</p>download
+        {{ link | safe }}
+    </center>
+    </div>
+        
+    <!-- <a href="/download?output_file_name={{ output_file_name }}">Download Output File</a> -->
+
+    <!-- <a href="reconciled_data111.xlsx">Download</a> -->
+</body>
+</html>
+
+</html>
+
+
+
